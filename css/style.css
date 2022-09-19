@@ -1,0 +1,308 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  background-color: #333;
+  
+    /* Because we want header to be sticky later */
+    height: 9.6rem;
+    padding: 0 9.6rem;
+  }
+
+  .logo {
+    height: 8rem;
+  }
+
+  /**************************/
+  /* NAVIGATION */
+  /**************************/
+  
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+  }
+  
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+  
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    color: #cf711f;
+  }
+
+  /* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.fixed-position {
+  position: fixed;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+    
+  /**************************/
+  /*  Hero Section  */
+  /**************************/
+
+.section-hero {
+    padding: 14rem 0;
+    background-color: #333;
+  }
+
+  .hero-jumbotron {
+    font-size: 6rem;
+    font-family: 'Manrope', sans-serif;
+    text-align: left;
+   
+    line-height: 5rem;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.hero-jumbotron em {
+  color: #D4D4D4;
+}
+
+  /**************************/
+  /*        Skills          */
+  /**************************/
+
+  .section-skills {
+    padding: 9.6rem 0;
+  }
+
+  .skills-text {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+    margin: 1.8rem auto auto;
+  }
+
+  .skills-list {
+    font-size: 2.4rem;
+    font-family: 'Spline Sans Mono', monospace;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+   /**************************/
+  /*        Work           */
+  /**************************/
+
+.section-work {
+padding: 6.8rem 0;
+}
+.section-work div {
+  margin: auto auto 6rem;
+}
+
+.subheading {
+  display: block;
+    font-size: 1.2rem;
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: 600;
+    color: #D4D4D4;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+.project-heading {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 1.4rem 0;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.project-info {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.project-year {
+  margin: auto;
+  z-index: -1;
+  font-size: 2rem;
+  color: #555;
+}
+
+.project-tool {
+  display: flex;
+  align-content: space-between;
+  gap: 1.6rem;
+
+  margin-top: 1.4rem;
+  font-size: 1.6rem;
+  list-style: none;
+}
+
+.tool-item {
+  color: #888;
+  font-family: 'Spline Sans Mono', monospace;
+}
+
+.tool-item:hover {
+  color: #555;
+}
+
+  /**************************/
+  /*        Contact          */
+  /**************************/
+  
+  .section-contact {
+    padding: 9.6rem 0;
+    background-color: #333;
+  }
+
+  .contact-jumbotron {
+    font-size: 3.6rem;
+    max-width: 100rem;
+    text-align: left;
+    margin: auto;
+  }
+
+  .contact-text {
+    font-size: 1.8rem;
+    max-width: 60rem;
+    margin-bottom: 4rem;
+  }
+
+  .contact-links {
+    margin-top: 4rem;
+  }
+
+  .contact-links span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Spline Sans Mono', monospace;
+  }
+
+  .social-links {
+    margin-top: 1rem;
+    font-size: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 2REM;
+  }
+
+  .social-item {
+    margin: 2rem 0;
+  }
+
+  .social-item a {
+    color: #E3E3E3;
+  }
+
+  .social-item a:hover {
+    color: #555;
+    transition: all 0.2S;
+  }
+
+  .contact-link {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  .contact-link:hover {
+    color: #999;
+  }
+
+  .social-img {
+    width: 2rem;
+    height: auto;
+    color: #fff;
+    margin-right: 1rem;
+  }
+
+  .social-img:hover {
+    color: #999;
+  }
+
+  .social-text {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  /**************************/
+  /*        Footer          */
+  /**************************/
+
+footer {
+  padding: 4.8rem;
+  background-color: #333;
+}
+
+.footer-text {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+
+  /**************************/
+  /*        Buttons         */
+  /**************************/
+
+  
+  .btn,
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+  
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.8rem 2.6rem;
+  
+    /* Only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  
+    /* Put transition on original "state" */
+    /* transition: background-color 0.3s; */
+    transition: all 0.3s;
+  }
+  
+  .btn--full:link,
+  .btn--full:visited {
+    background-color: #192A51;
+    color: #fff;
+  }
+  
+  .btn--full:hover,
+  .btn--full:active {
+    background-color: #FFF;
+    color: #333;
+    transition: all 0.4s;
+  }

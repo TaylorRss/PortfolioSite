@@ -1,0 +1,150 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM 
+
+- Font Sizes (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24/ 30 / 36
+44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weights
+
+Default: 400
+Medium: 500
+Semi-Bold: 600
+Bold: 700
+
+- Line Heights 
+Default: 
+Small: 
+Medium:
+Paragraph Default
+
+- Letter Spacing 
+-0.5px
+0.75px
+
+--- 02 COLOURS
+
+- Primary: #E67E22
+- Tints: #FDF2E9
+- Shades: #CF711F
+- Accents:
+- Greys:
+#555
+#333
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Varela+Round&display=swap');
+/* JUMBOTRON */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
+/* SubHeading */
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;400;500;600&display=swap');
+
+@font-face {
+  font-family: Barracuda;
+  src: url(../elements/font/Barracuda-regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* font-size: 10px; */
+  
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+        /* Only works if there is nothing absolutely positioned in relation to body */
+    overflow-x: hidden;
+    background-color: #262626;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #ededef;
+  }
+
+  /**************************/
+  /* GENRAL REUSABLE COMPONENTS */
+  /**************************/
+  
+  .container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+  
+    /* margin-bottom: 9.6rem; */
+  }
+  
+  /* .grid:last-child {
+    margin-bottom: 0;
+  } */
+  
+  .grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+  }
+  
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* .grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+  } */
+  
+  .grid--center-v {
+    align-items: center;
+  }
+  
+  .heading-primary,
+  .heading-secondary,
+  .heading-tertiary {
+    font-weight: 700;
+    color: #D4D4D4;
+    /* color: #45260a; */
+    /* color: #343a40; */
+    letter-spacing: -0.5px;
+  }
+  
+  .heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+  }
+  
+  .heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+    text-align: center;
+  }
+  
+  .heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+  }
+  
